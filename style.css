@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Josefinsans;
+    src: url(./fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+:root {
+    /* ### Primary */
+    --desaturated_red: hsl(0, 36%, 70%);
+    --soft_red: hsl(0, 93%, 68%);
+
+    /* ### Neutral */
+    --dark_grayish_red: hsl(0, 6%, 24%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Josefinsans;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+}
+
+main {
+    width: 100%;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 6em;
+    margin: 2em;
+}
+
+.logo img {
+    width: 100%;
+}
+.mobile-image {
+    width: auto;
+}
+
+.mobile-image img{
+    width: auto;
+}
+
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 { 
+    width: 20rem;
+    font-weight: 600;
+    font-size: 2.75em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+}
+
+h1 span {
+    color: var(--desaturated_red);
+    font-weight: 300;
+}
+
+.main-text p {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 0 1.35em;
+    color: var(--desaturated_red);
+    margin: 1em 0;
+}
+
+
+.main-text form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=email] {
+    position: relative;
+    outline: none;
+    color: var(--desaturated_red);
+    border: 1px solid var(--desaturated_red);
+    border-radius: 25px;
+    width: 80%;
+    padding: 1em;
+}
+
+::placeholder {
+    color: var(--desaturated_red);
+}
+
+button[type=submit]{
+    position: absolute;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    padding: .77em 2em;
+    border-radius: 25px;
+    box-shadow: 0 7px 8px 0 hsla(0, 74%, 74%, 20%), 0 9px 20px 0 hsla(0, 74%, 74%, 19%);
+    right: 1em;
+}
